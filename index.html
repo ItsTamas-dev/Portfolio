@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamás Kovács</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="page">
+        <nav id="desktop-nav">
+            <div class="logo">
+                Tamás Kovács
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">
+                Kovács Tamás
+            </div>
+            <div class="hamburger-menu">
+                <dib class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </dib>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <div class="notreveal">
+            <section class="profile">
+                <div class="section_pic-container">
+                    <img src="p5.jpg" alt="Kovács Tamás picture" class="prof-pic">
+                </div>
+                <div class="section_text">
+                    <p class="section_text_p1">Hello, I'm</p>
+                    <h1 class="title">Tamás Kovács</h1>
+                    <p class="section_text_p2">Software Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1" onclick="window.open('tamaskovacs.pdf')">
+                            Download CV
+                        </button>
+                        <button class="btn btn-color-2" onclick="window.open('https://github.com/4n1m3Hun')">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="page" id="about">
+        <div class="reveal">
+            <section class="about">
+                <p class="section_text_p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="section_pic-container">
+                        <img src="p6.jpg" alt="png" class="about-pic">
+                        <div class="about-containers about-res">
+                            <div class="details-container">
+                                <i class="fas fa-medal"></i>
+                                <h3>Experience</h3>
+                                <p>Recent graduate<br>Frontend Developer</p>
+                            </div>
+                            <div class="details-container">
+                                <i class="fas fa-book-open"></i>
+                                <h3>Education</h3>
+                                <p>B.Sc. Computer Science <br>Software Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <i class="fas fa-medal"></i>
+                                <h3>Experience</h3>
+                                <p>Recent graduate<br>Frontend Developer</p>
+                            </div>
+                            <div class="details-container">
+                                <i class="fas fa-book-open"></i>
+                                <h3>Education</h3>
+                                <p>B.Sc. Computer Science <br>Software Development</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                I am a third-year student at the University of Szeged, majoring in Software Engineering. Throughout my studies, I have gained experience in various programming languages, with a special focus on web design. As an entry-level professional, I am committed to continuous professional development and am not afraid to take on greater challenges. My goal is to apply my knowledge and skills to contribute to the success of an innovative and dynamic team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="page" id="resume">
+        <div class="reveal">
+            <section class="resume">
+                <p class="section_text_p1">Explore My</p>
+                <h1 class="title">Resume</h1>
+                <div class="section-container">
+                    <div class="resume-section_left">
+                        <div class="left-title">
+                            <h3>Why hire me?</h3>
+                            <p>With a Bachelor's in Software Engineering and a focus on web design, I’m ready to tackle challenges and contribute to the success of dynamic teams.</p>
+                        </div>
+                        <div class="resume-left-btns">
+                            <button class="res-btn active" id="resume-education" onclick="toggleAbout('resume-education')">Education</button>
+                            <button class="res-btn" id ="resume-experience" onclick="toggleAbout('resume-experience')">Experience</button>
+                            <button class="res-btn" id="resume-skills" onclick="toggleAbout('resume-skills')">Skills</button>
+                            <button class="res-btn" id="resume-aboutme"onclick="toggleAbout('resume-aboutme')">About me</button>
+                        </div>
+                    </div>
+                    <div class="resume-section_right">
+                        <div class="resume-education res show">
+                            <h3>My Education</h3>
+                            <p>The following elements collect the studies I have done so far.</p>
+                            <div class="cards">
+                                <div class="card">
+                                    <h4>2022-2025</h4>
+                                    <div>
+                                        <span>Diploma in Software Engineering</span>
+                                        <li>University of Szeged</li>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h4>2021-2022</h4>
+                                    <div>
+                                        <span>Software Development Program</span>   
+                                        <li>Békéscsaba Technical School</li>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h4>2021-2022</h4>
+                                    <div>
+                                        <span>Office IT Specialist</span>
+                                        <li>Békéscsaba Technical School</li>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h4>2017-2021</h4>
+                                    <div>
+                                        <span>High school diploma</span>
+                                        <li>Békéscsaba Technical School</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-experience res">
+                            <h3>My Experience</h3>
+                            <p>Currently, I do not have work-related experience.</p>
+                        </div>
+                        <div class="resume-skills res">
+                            <h3>My Skills</h3>
+                            <p>I have already worked with the following languages to a minimum extent.</p>
+                            <div class="cards">
+                                <div class="card">
+                                    <img src="logo/css.png" alt="">
+                                    <div class="overlay">CSS</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/php.png" alt="">
+                                    <div class="overlay">PHP</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/java.png" alt="">
+                                    <div class="overlay">Java</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/html.png" alt="">
+                                    <div class="overlay">HTML</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/c-sharp.png" alt="">
+                                    <div class="overlay">C#</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/js.png" alt="">
+                                    <div class="overlay">Java Script</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/cpp.png" alt="">
+                                    <div class="overlay">C++</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/angular.png" alt="">
+                                    <div class="overlay">Angular</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/sql.png" alt="">
+                                    <div class="overlay">MySQL</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/react.png" alt="">
+                                    <div class="overlay">React</div>
+                                </div>
+                                <div class="card">
+                                    <img src="logo/python.png" alt="">
+                                    <div class="overlay">Python</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-aboutme res">
+                            <h3>About me</h3>
+                            <p>A tech enthusiast by day, a gamer and explorer by night.</p>
+                            <table>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Kovács Tamás</td>
+                                    <td>Phone</td>
+                                    <td>+36/30-681-1464</td>
+                                </tr>
+                                <tr>
+                                    <td>Experience</td>
+                                    <td>Recent graduate</td>
+                                    <td>Discord</td>
+                                    <td>kovacstamas</td>
+                                </tr>
+                                <tr>
+                                    <td>Nationality</td>
+                                    <td>Hungarian</td>
+                                    <td>emial</td>
+                                    <td>k.tamas1216@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>FreeLance</td>
+                                    <td>Not Avaible</td>
+                                    <td>Languages</td>
+                                    <td>English, Hungarian</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="page" id="projects">
+        <div class="reveal">
+            <section class="projects">
+                <p class="section_text_p1">Browse My</p>
+                <h1 class="title">Projects</h1>
+                <div class="section-container pro_sec">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pro-img2">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                                <div class="pro-inf">
+                                    <h1>01</h1>
+                                    <h2>ZeeSharing</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nisi, dignissimos quidem veritatis delectus officia explicabo obcaecati, ducimus pariatur illo ex, ullam amet fugiat voluptatibus vitae. Eius dolor ad vero.</p>
+                                    <span>HTML, CSS, Angular, FireBase, NodeJs</span>
+                                    <a href="https://github.com/4n1m3Hun/ZeeSharing" target="_blank">GitHub</a>
+                                </div>
+                                <div class="pro-img">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro-inf">
+                                    <h1>01</h1>
+                                    <h2>ZeeSharing</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nisi, dignissimos quidem veritatis delectus officia explicabo obcaecati, ducimus pariatur illo ex, ullam amet fugiat voluptatibus vitae. Eius dolor ad vero.</p>
+                                    <span>HTML, CSS, Angular, FireBase, NodeJs</span>
+                                    <a href="https://github.com/4n1m3Hun/ZeeSharing" target="_blank">GitHub</a>
+                                </div>
+                                <div class="pro-img">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro-inf">
+                                    <h1>01</h1>
+                                    <h2>ZeeSharing</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nisi, dignissimos quidem veritatis delectus officia explicabo obcaecati, ducimus pariatur illo ex, ullam amet fugiat voluptatibus vitae. Eius dolor ad vero.</p>
+                                    <span>HTML, CSS, Angular, FireBase, NodeJs</span>
+                                    <a href="https://github.com/4n1m3Hun/ZeeSharing" target="_blank">GitHub</a>
+                                </div>
+                                <div class="pro-img">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro-inf">
+                                    <h1>01</h1>
+                                    <h2>ZeeSharing</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nisi, dignissimos quidem veritatis delectus officia explicabo obcaecati, ducimus pariatur illo ex, ullam amet fugiat voluptatibus vitae. Eius dolor ad vero.</p>
+                                    <span>HTML, CSS, Angular, FireBase, NodeJs</span>
+                                    <a href="https://github.com/4n1m3Hun/ZeeSharing" target="_blank">GitHub</a>
+                                </div>
+                                <div class="pro-img">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro-inf">
+                                    <h1>01</h1>
+                                    <h2>ZeeSharing</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nisi, dignissimos quidem veritatis delectus officia explicabo obcaecati, ducimus pariatur illo ex, ullam amet fugiat voluptatibus vitae. Eius dolor ad vero.</p>
+                                    <span>HTML, CSS, Angular, FireBase, NodeJs</span>
+                                    <a href="https://github.com/4n1m3Hun/ZeeSharing" target="_blank">GitHub</a>
+                                </div>
+                                <div class="pro-img">
+                                    <img src="p_img/teszt.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev sw-btnl"></div>
+                    <div class="swiper-button-next sw-btnr"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="page" id="contact">
+        <div class="reveal">
+            <section class="contact">
+                <p class="section_text_p1">Get In Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="section-container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1>You can reach me here</h1>
+                            <p><i class="fas fa-paper-plane" onclick="openGmail('k.tamas1216@gmail.com')"></i>k.tamas1216@gmail.com</p>
+                            <p><i class="fas fa-phone"></i>+36/30-681-1464</p>
+                            <div class="soc-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100086207821101" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/tomi2001.tst/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <a class="download" href="tamaskovacs.pdf" download>Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="82711e89-5b92-4027-82b7-fce9e828f2ed">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <input type="email"  id="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message"  id="message" rows="6" placeholder="Your message"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <button id="scrollButton"><i class="fas fa-arrow-circle-down" id="scrollImg"></i></button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        speed: 1200,
+        crossFade: true,
+});
+</script>
+</html>
